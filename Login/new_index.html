@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RacconStack | Login</title>
+</head>
+<body>
+    <div class="box">
+            <!--**caixa-azul**-->
+        <div class="box_01">
+            <div class="text_box">
+                <h1>WELCOME!</h1>
+                    <br>
+                    <p><strong>Enter your details and start journey wint us</strong></p>
+                    <br>
+                    <a href="index_regiter.html"><input type="button" value="SING UP" class="register"></a>
+            </div>
+        </div>
+            <!--**caixa-azul**-->
+
+            <!--**caixa-branca**-->
+        <div class="box_02">       
+            <div class="input_box">
+                <!--login-->
+                <div class="field">
+                    <h1 class="test">Login please</h1>
+                        <input type="email" name="login" id="ilogin" class="input_user" placeholder=" ✉️ | E-mail" required> 
+                        <label for="ilogin" class="input_label"></label>
+                </div>
+                <!--login-->
+            </div>   
+            <div class="input_box">
+                <!--senha-->
+                    <div class="field">
+                        <input type="password" name="password" id="ipassword" class="input_user" placeholder=" 🔑 | Password" required>
+                        <label for="ipassword" class="input_label"></label>
+                    </div>
+                <!--senha-->
+                <br>
+                <!--extras-->
+                <input type="submit" value="Log in" class="login">
+                    <div id="recover">
+                        <input type="checkbox" name="emember me" class="checkbox">
+                        <label for="checkbox" class="remember">Remember me</label> 
+                        <a href="index_recover.html" class="recover">Forgot password?</a>
+                    </div>
+                <!--extras-->                      
+            </div>
+        </div>
+            <!--**caixa-branca**-->
+    </div>
+</body>
+    <style>
+           @charset "UTF-8";
+
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    body, html{
+        background-image: linear-gradient(to top, #d5d6d7, #f0f2f5); ;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    main{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+    }
+    /*--caixa-azul--*/
+    .box_01{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-10%, -50%);
+        background-image: linear-gradient(to top, #0245d5, #004cfa);
+        width: 600px;
+        height: 700px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+    .text_box{
+        color: #ffffff;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+    }
+    .register{
+        font-size: 20px;
+        border: none;
+        margin-top: 20px;
+        padding: 20px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: #1877f2;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .register:hover{
+        box-shadow: 0px 0px 15px #ffffff;
+    }
+
+    /*--caixa-azul--*/
+
+    /*--caixa-branca--*/
+    .box_02{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-100%, -50%);
+        background-image: linear-gradient(to top, #f3f3f3, #ffffff);
+        width: 550px;
+        height: 600px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .input_box{
+        position: relative;
+        display: block;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-top: 10px;
+        text-align: center;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -110%);
+    }
+
+    .input_user{
+        background: #fafafa;
+        border: 1px solid #dbdbdb;
+        color: #dbdbdb;
+        border-radius: 2px;
+        outline: none;
+        color: #000000;
+        font-size: 15px;
+        width: 100%;
+        height: 50px;
+        letter-spacing: 2px;
+    }
+    
+    .login{
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, 100%);
+        font-size: 20px;
+        border: none;
+        padding: 20px;
+        width: 70%;
+        border-radius: 4px;
+        background-color: #1877f2;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .login:hover{
+    background-color: #1263cd;   
+    }
+    .test{
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -150%);  
+    }
+    /*--caixa-branca--*/
+    </style>
+</html>

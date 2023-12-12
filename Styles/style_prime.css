@@ -40,7 +40,7 @@ section#login > div#img > div#box1{
     text-align: center;
     font-size: 15px;
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%); 
 }
@@ -63,10 +63,13 @@ section#login > div#form{
     display: block;
     padding: 20px;
     margin-top: 10px;
+    text-align: center;
+    
 }
 .input_box{
     position: relative;
 }
+
 .input_user{
     background: #fafafa;
     border: 1px solid #dbdbdb;
@@ -78,6 +81,10 @@ section#login > div#form{
     width: 100%;
     height: 35px;
     letter-spacing: 2px;
+    display: block;
+    padding: 20px;
+    margin-top: 10px;
+    text-align: center;
 }
 #recover{
     text-align: center;
@@ -111,7 +118,7 @@ section#login > div#form{
     border: none;
     margin-top: 20px;
     padding: 10px;
-    width: 75%;
+    width: 45%;
     border-radius: 4px;
     background-color: #1877f2;
     color: #ffffff;
@@ -119,7 +126,7 @@ section#login > div#form{
     font-size: 15px;
     cursor: pointer;
     position: absolute;
-    top: 110%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -130,8 +137,10 @@ section#login > div#form{
 /*----------------------------------------*/
 
 /*----------RECUPERACAO DE SENHA----------*/
-.recover{
+.recover {
     text-decoration-line: none;
-    font-size: 12px;
+    position: absolute;
+    left: 60%;
 }
 /*----------------------------------------*/
+
