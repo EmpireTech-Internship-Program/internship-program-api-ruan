@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RacconStack | Home </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../Script/script.js" defer></script>
+
+</head>
+<body>
+    <!------SIDEBAR + HEADER------>
+     <div class="header" id="header">
+        <button class="btn_icon_header" onclick="toggle_sidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+        </button>
+        <div class="logo_header">
+            <img src="../Images/raccon_2.png" alt="img_raccon">
+        </div>
+        <div class="navigation" id="navigation">
+            <button class="btn_icon_header" onclick="toggle_sidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+            </button>
+            <a href="#" class="new_regiter">New register</a>
+            <a href="#" class="exit">Exit</a>
+        </div>
+     </div>
+     <div class="content" id="content" onclick="closed_sidebar()" tabindex="0">
+        <!------REGISTER-BANK------>
+            <div class="container_bank">
+                <header>
+                    <h1>Register a new bank</h1>
+                </header>
+                <form id="register_form"><!--TODO-FORM-->
+                    <p>Add a bank:</p>
+                    <div class="form_control">
+                        <input type="text" id="register_input_bank" placeholder="What is the name of your bank?">
+                        <button type="submit">
+                            <i class="fa-thin fa-plus">
+                        </i></button>
+                    </div>
+                </form>
+                <form id="edit_form" class=""><!--TODO-EDIT--><!--adiconar a class hide posteriormente-->
+                    <p>Edit your bank</p>
+                    <div class="form_control">
+                    <input type="text" id="edit_input">
+                    <button type="submit">
+                        <i class="fa-solid fa-check-double"></i>
+                    </button>
+                    </div>
+                    <button id="cancel_edit_btn">Cancel</button>
+                </form>   
+                <!--BARRA DE PESQUISAR-->
+                <div id="toolbar">
+                    <div id="search">
+                    <h4>Search</h4>
+                    <form>
+                        <input type="text" id="search-input" placeholder="Search">
+                        <button id="erase_button">
+                            <i class="fa-solid fa-delete-left"></i>
+                        </button>
+                    </form>
+                </div>
+                </div>
+
+                    <div id="list_banks"><!--todo-list-->
+                        <div class="banks">
+                            <h3>NuBank</h3>
+                            </button>
+                            <button class="edit_bank"><!--edit-todo-->
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button class="remove_bank"><!--remove-todo-->
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                        <div class="banks">
+                            <h3>Inter</h3>
+                            </button>
+                            <button class="edit_bank"><!--edit-todo-->
+                                <i class="fa-solid fa-pen"></i>
+                            </button>
+                            <button class="remove_bank"><!--remove-todo-->
+                                <i class="fa-solid fa-xmark"></i>
+                            </button>
+                        </div>   
+                </div>
+            </div>      
+    </div><!--div content--> 
+</body>
+
+
+<style>
+    :root{
+        --color_1: #1877f2;
+        --color_2: #2982f7;
+        --color_3: #1263cd;
+        --color_4: #1dac35;
+        --color_5: #ffde80;
+        --color_6: #fff;
+    }
+    *{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        
+    }
+    body{
+        background-image: linear-gradient(to top, #d5d6d7, #f0f2f5);
+        height: 100vh;
+        width: 100vw;
+    }
+    img{
+        width: 45px;
+    }
+    .header,
+    .navigation{
+        display: flex;
+        flex-direction: row;
+        align-items: center;    
+    }
+    .header{
+        background-color: var(--color_1);
+        box-shadow: 1px 1px 4px black;
+        height: 56px;
+        padding: 0 10%; /*o 0 representa o eixo x e os 10% representa o eixo y*/
+        justify-content: space-between;
+    }
+    .navigation{
+        gap: 3em;
+        z-index: 2;
+    }
+    .navigation a{
+        text-decoration: none;
+        color: var(--color_6);
+        transition: 1s;
+        font-weight: bold;
+    }
+    .new_regiter{
+        background-color: var(--color_4);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .exit{
+        background-color: var(--color_3);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .content{
+        text-align: center;
+        padding-top: 5em;
+        height: 100vh;
+        transition: 1s;
+    }
+    .btn_icon_header{
+        display: none;
+        background-color: transparent;
+        border: none;
+        color: var(--color_6);
+        cursor: pointer;
+    }
+    /*------------------*/
+    @media screen and (max-width: 768px) {
+        .btn_icon_header{
+            display: block;
+        }
+        .navigation{
+            position: absolute;
+            flex-direction: column;
+            top: 0;
+            background-color: var(--color_2);
+            height: 100%;
+            width: 35vw;
+            padding: 1em;
+            animation-duration: 1s;
+            margin-left: -100vw;
+        }
+
+        .container_bank{
+        width: 300px;
+        }
+        h1{
+            font-size: 25px;
+        }
+
+    @keyframes show-sidebar {
+        from {margin-left: -100vw;}
+        top {margin-left: -10vw;}
+    }
+    }
+    /*------REGISTER------*/
+    button{
+        background-color: var(--color_1);
+        color: var(--color_6);
+        padding: .5rem .9rem;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    button:hover{
+        background-color: var(--color_3);
+    }
+    button i {
+        pointer-events: none;
+    }
+    input,select{
+        padding: 5px;
+    }
+    .hide{
+        display: none;
+    }
+    /*------CABEÇALHO------*/
+    .container_bank{
+        max-width: 450px;
+        margin: 3rem auto 0;
+        background-color: var(--color_6);
+        box-shadow: 1px 1px 4px black;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: none;
+    }
+    .container_bank header{
+        text-align: center;
+        padding: 0 0 1rem;
+        border-bottom: 1px solid #ccc;
+    }
+    /*------CABEÇALHO------*/
+    /*------CORPO------*/
+    #register_form, #edit_form{
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;     
+    }
+    #register_form p, #edit_form p{
+        margin-bottom: .5rem;
+        font-weight: bold;     
+    }
+    .form_control{
+        display: flex;
+    }
+    .form_control input{
+        margin-right: .3rem;
+    }
+    #cancel_edit_btn{
+    margin-top: 1rem;
+    }
+    /*------CORPO------*/
+    /*------BARRA DE PESQUISA------*/
+    #toolbar{
+        padding: 1rem;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+    }
+    #toolbar h4{
+        margin-bottom: .5rem;
+    }
+    #search{
+        text-align: center;
+    }
+
+    /*------BARRA DE PESQUISA------*/
+    /*------REGISTER------*/
+</style>
+</html>
