@@ -17,7 +17,7 @@
                 </svg>
         </button>
         <div class="logo_header">
-            <img src="../Images/raccon_2.png" alt="img_raccon">
+            <img src="Images/raccon_2.png" alt="img_raccon">
         </div>
         <div class="navigation" id="navigation">
             <button class="btn_icon_header" onclick="toggle_sidebar()">
@@ -31,66 +31,8 @@
      </div>
      <div class="content" id="content" onclick="closed_sidebar()" tabindex="0">
         <!------REGISTER-BANK------>
-            <div class="container_bank">
-                <header>
-                    <h1>Register a new bank</h1>
-                </header>
-                <form id="register_form"><!--TODO-FORM-->
-                    <p>Add a bank:</p>
-                    <div class="form_control">
-                        <input type="text" id="register_input_bank" placeholder="What is the name of your bank?">
-                        <button type="submit">
-                            <i class="fa-thin fa-plus">
-                        </i></button>
-                    </div>
-                </form>
-                <form id="edit_form" class=""><!--TODO-EDIT--><!--adiconar a class hide posteriormente-->
-                    <p>Edit your bank</p>
-                    <div class="form_control">
-                    <input type="text" id="edit_input">
-                    <button type="submit">
-                        <i class="fa-solid fa-check-double"></i>
-                    </button>
-                    </div>
-                    <button id="cancel_edit_btn">Cancel</button>
-                </form>   
-                <!--BARRA DE PESQUISAR-->
-                <div id="toolbar">
-                    <div id="search">
-                    <h4>Search</h4>
-                    <form>
-                        <input type="text" id="search-input" placeholder="Search">
-                        <button id="erase_button">
-                            <i class="fa-solid fa-delete-left"></i>
-                        </button>
-                    </form>
-                </div>
-                </div>
-
-                    <div id="list_banks"><!--todo-list-->
-                        <div class="banks">
-                            <h3>NuBank</h3>
-                            </button>
-                            <button class="edit_bank"><!--edit-todo-->
-                                <i class="fa-solid fa-pen"></i>
-                            </button>
-                            <button class="remove_bank"><!--remove-todo-->
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </div>
-                        <div class="banks">
-                            <h3>Inter</h3>
-                            </button>
-                            <button class="edit_bank"><!--edit-todo-->
-                                <i class="fa-solid fa-pen"></i>
-                            </button>
-                            <button class="remove_bank"><!--remove-todo-->
-                                <i class="fa-solid fa-xmark"></i>
-                            </button>
-                        </div>   
-                </div>
-            </div>      
-    </div><!--div content--> 
+                 
+    </div> 
 </body>
 
 
@@ -107,8 +49,7 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         padding: 0px;
         margin: 0px;
-        box-sizing: border-box;
-        
+        box-sizing: border-box;        
     }
     body{
         background-image: linear-gradient(to top, #d5d6d7, #f0f2f5);
@@ -193,80 +134,6 @@
         top {margin-left: -10vw;}
     }
     }
-    /*------REGISTER------*/
-    button{
-        background-color: var(--color_1);
-        color: var(--color_6);
-        padding: .5rem .9rem;
-        font-size: 1rem;
-        border-radius: 5px;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    button:hover{
-        background-color: var(--color_3);
-    }
-    button i {
-        pointer-events: none;
-    }
-    input,select{
-        padding: 5px;
-    }
-    .hide{
-        display: none;
-    }
-    /*------CABEÇALHO------*/
-    .container_bank{
-        max-width: 450px;
-        margin: 3rem auto 0;
-        background-color: var(--color_6);
-        box-shadow: 1px 1px 4px black;
-        padding: 1.5rem;
-        border-radius: 8px;
-        border: none;
-    }
-    .container_bank header{
-        text-align: center;
-        padding: 0 0 1rem;
-        border-bottom: 1px solid #ccc;
-    }
-    /*------CABEÇALHO------*/
-    /*------CORPO------*/
-    #register_form, #edit_form{
-        padding: 1rem;
-        border-bottom: 1px solid #ccc;     
-    }
-    #register_form p, #edit_form p{
-        margin-bottom: .5rem;
-        font-weight: bold;     
-    }
-    .form_control{
-        display: flex;
-    }
-    .form_control input{
-        margin-right: .3rem;
-    }
-    #cancel_edit_btn{
-    margin-top: 1rem;
-    }
-    /*------CORPO------*/
-    /*------BARRA DE PESQUISA------*/
-    #toolbar{
-        padding: 1rem;
-        border-bottom: 1px solid #ccc;
-        display: flex;
-    }
-    #toolbar h4{
-        margin-bottom: .5rem;
-    }
-    #search{
-        text-align: center;
-    }
-
-    /*------BARRA DE PESQUISA------*/
-    /*------REGISTER------*/
+    
 </style>
 </html>

@@ -5,7 +5,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
 }
 
 body, html{
@@ -64,7 +63,6 @@ section#login > div#form{
     padding: 20px;
     margin-top: 10px;
     text-align: center;
-    
 }
 .input_box{
     position: relative;
@@ -106,7 +104,6 @@ section#login > div#form{
 .login:hover{
     background-color: #1263cd;
 }
-
 /*---------------------------------*/
 
 /*----------BOTAO DE NOVA CONTA----------*/
@@ -140,3 +137,107 @@ section#login > div#form{
 }
 /*----------------------------------------*/
 
+/* Typical Device Breakpoint
+-----------------------------
+Telas pequenas: até 600px
+Celular: de 600px até 770px
+Tablet: 770px até 990px
+Desktop: 990px até 1200px
+Telas grandes: acima de 1200px
+*/
+@media screen {
+    section#login > div#img > div#box1{
+        font-size: 14px;
+        padding: 30px;
+    }
+    .remember{
+        font-size: 12px;
+        position: absolute;
+        left: 10%;
+    }
+    .checkbox{
+        position: absolute;
+        left: 2%;
+        top: 94%;
+    }
+    .recover{
+        font-size: 12px;
+        left: 55%;
+    }
+    
+}
+
+@media screen and (min-width: 770px) and (max-width: 990px) { /*telas medias*/
+    section#login {
+        width: 85vw;
+    }
+
+    section#login > div#img {
+        float: right;
+        width: 30%;
+        height: 100%;
+    }
+
+    section#login > div#form {
+        float: left;
+        width: 70%;
+        margin-top: 15%;
+
+    }
+    section#login > div#img > div#box1{
+        font-size: 16px;
+    }
+
+    /*-----------*/
+    .remember{
+        font-size: 15px;
+        position: absolute;
+        left: 10%;
+    }
+    .checkbox{
+        position: absolute;
+        left: 6%;
+        top: 95%;
+    }
+    .recover{
+        font-size: 15px;
+        left: 70%;
+    }
+    
+}
+
+@media screen and (min-width: 990px) { /*telas grandes*/
+    section#login {
+        width: 950px;
+    }
+    section#login > div#img {
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+    section#login > div#form {
+        float: left;
+        width: 50%;
+        margin-top: 10%;
+
+    }
+    section#login > div#img > div#box1{
+        font-size: 18px;
+    }
+   
+    /*-----------*/
+    .remember{
+        font-size: 15px;
+        position: absolute;
+        left: 10%;
+    }
+    .checkbox{
+        position: absolute;
+        left: 6%;
+        top: 95%;
+    }
+    .recover{
+        font-size: 15px;
+        left: 70%;
+    } 
+}

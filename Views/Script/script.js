@@ -31,10 +31,3 @@ window.addEventListener('resize', function(event){//esta funçao verifica a prop
         toggle_sidebar();
     }
 })
-//------REGISTER------//
-
-
-
-
-
-//------REGISTER------//
