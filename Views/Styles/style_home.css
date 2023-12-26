@@ -43,7 +43,7 @@ img{
     transition: 1s;
     font-weight: bold;
 }
-.new_regiter, .back{
+.new_regiter{
     background-color: var(--color_4);
     padding: 10px;
     border-radius: 5px;
@@ -53,11 +53,10 @@ img{
     padding: 10px;
     border-radius: 5px;
 }
-
 .content{
     text-align: center;
     padding-top: 5em;
-    height: 87%; /*--OBS--*/
+    height: 100vh;
     transition: 1s;
 }
 .btn_icon_header{
@@ -68,7 +67,7 @@ img{
     cursor: pointer;
 }
 /*------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
     .btn_icon_header{
         display: block;
     }
@@ -84,7 +83,12 @@ img{
         margin-left: -100vw;
     }
 
-    
+    .container_bank{
+    width: 300px;
+    }
+    h1{
+        font-size: 25px;
+    }
 
 @keyframes show-sidebar {
     from {margin-left: -100vw;}

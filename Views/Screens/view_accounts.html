@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RacconStack | Register account</title>
-    <link rel="stylesheet" href="../Styles_register/style_views_global.css">
-    <link rel="stylesheet" href="../Styles_register/style_header_global.css">
+    <link rel="stylesheet" href="../Styles/style_views_global.css">
+    <link rel="stylesheet" href="../Styles/style_header_global.css">
 </head>
 <body>
     <div class="header" id="header">
@@ -23,43 +23,53 @@
                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
                   </svg>
             </button>
-            <a href="#" class="back">Back</a>
-            <a href="#" class="exit">Exit</a>
+            <a href="../home.html" class="back">🏠 Home</a>
+            
         </div>
      </div>
      <div class="content" id="content" onclick="closed_sidebar()" tabindex="0">
+        <div class="box_center">
         <div class="box">
             <form action="">
                 <fieldset>
-                    <legend><strong>Register person</strong></legend>
+                    <legend><strong>Register the holder</strong></legend>
                     <div class="input_box">
-                        <input type="text" name="name" id="name" class="input_user" placeholder=" Name">
-                        <label for="name">Name</label>
+                        <input type="text" name="owner" id="owner" class="input_user" placeholder=" Owner of the account">
+                    </div>
+                    <br>
+                    <div class="radio">
+                    <p>Account type:</p>
+                    
+                        <input type="radio" name="type" value="savings account" id="savings" required>
+                        <label for="Savings account">Savings account</label>
+                        <br>
+                        <input type="radio" name="type" value="checking account" id="checking" required>
+                        <label for="Checking account">Checking account</label>
+                    </div>
+                     <br>
+                     <div class="input_box">
+                        <input type="number" name="account_number" id="account_number" class="input_user" placeholder=" Account number">
                     </div>
                     <div class="input_box">
-                        <input type="date" name="date_birth" id="date_birth" class="input_user" placeholder=" Date of birth">
-                        <label for="date_birth">Date of birth</label>
+                        <input type="date" name="opening_date" id="opening_date" class="input_user" placeholder=" Opening date">
                     </div>
                     <div class="input_box">
-                        <input type="number" name="id" id="id" class="input_user" placeholder=" Id">
-                        <label for="id">id</label>
+                        <input type="number" name="opening_balance" id="opening_balance" class="input_user" placeholder=" Opening balance">
                     </div>
-                    <div class="input_box">
-                        <input type="text" name="address_people" id="address_people" class="input_user" placeholder=" Address">
-                        <label for="address_people">address people</label>
-                    </div>
-                    <div class="input_box">
-                        <input type="number" name="telephone" id="telephone" class="input_user" placeholder=" Telephone">
-                        <label for="telephone">telephone</label>
-                    </div>
-                    <div class="input_box">
-                        <input type="email" name="email" id="email" class="input_user" placeholder=" Code">
-                        <label for="email">email</label>
-                    </div>
-                    <input type="submit" value="Register" id="submit">
+                    <input type="submit" value="Register" id="submit">  
                 </fieldset>
             </form>
         </div>
+        <div class="box_2">
+            <form action="">
+                <fieldset>
+                    <p>text</p>
+                    <p>text</p>
+                    <p>text</p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
     </div>
     <script src="../Script/script.js"></script>
 </body>
