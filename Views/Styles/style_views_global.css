@@ -19,28 +19,13 @@ body{
     position: relative; /*essa funcao faz ela ocupar o espaco do seu proprio elemento*/
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 0%);
+    transform: translate(-50%, -60%);
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
     padding: 15px;
     color: var(--color_6);
     width: 300px;
-}
-
-.box_2{
-    position: relative; /*essa funcao faz ela ocupar o espaco do seu proprio elemento*/
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    padding: 15px;
-    color: var(--color_6);
-    width: 300px;
-    margin-top: 30px;
-    color: #7d7d7d;
 }
 
 fieldset{
@@ -58,6 +43,12 @@ legend{
 .input_box{  
     position: relative;
     padding: 15px;    
+}
+.input_box_date{  
+    position: relative;
+    padding: 15px; 
+    text-align: left;
+    color: #7d7d7d; 
 }
 .input_user{
     background: #fafafa;
@@ -83,6 +74,7 @@ legend{
     font-weight: bold;
     width: 200px;
 }
+
 #date_birth, #opening_date{
     color: #7d7d7d;
 }
@@ -103,18 +95,12 @@ legend{
     .box{
         width: 70vw;
     }
-    .box_2{
-        width: 70vw;
-    }
     #submit{
         width: 30vw;
     }
 }
 @media screen and (min-width: 992px) {
     .box{
-        width: 800px;
-    }
-    .box_2{
         width: 800px;
     }
     #submit{
