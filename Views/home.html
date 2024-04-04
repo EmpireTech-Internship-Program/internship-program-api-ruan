@@ -26,9 +26,9 @@
                   </svg>
             </button>
             
-            <a href="Screens/views_banks.html" class="record">Bank</a>
-            <a href="Screens/view_agencies.html" class="record">Agencie</a>
-            <a href="Screens/view_accounts.html" class="record">Accounts</a>
+            <a href="Screens/view_bank.html" class="record">Bank</a>
+            <a href="Screens/view_agencie.html" class="record">Agencie</a>
+            <a href="Screens/view_account.html" class="record">Accounts</a>
             <a href="Screens/view_people.html" class="record">People</a>
             <a href="../Login/new_index.html" class="exit">Exit</a>
         </div>
@@ -37,10 +37,10 @@
         <!------REGISTER-BANK------>
         <div class="box_2">
             <form action="">
-                <fieldset>
-                    <legend><strong>Registers</strong></legend>
+                
+                    <h1>Register</h1>
                     
-                </fieldset>
+                
             </form>
         </div>   
     </div> 
@@ -126,33 +126,28 @@
         cursor: pointer;
     }
     .box_2{
-    position: relative; /*essa funcao faz ela ocupar o espaco do seu proprio elemento*/
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 50%;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
-    padding: 15px;
-    color: var(--color_6);
-    width: 300px;
-    color: #7d7d7d;
-}
-fieldset{
-    border: 3px solid var(--color_2);
-    border-radius: 3px;
+        position: relative; /*essa funcao faz ela ocupar o espaco do seu proprio elemento*/
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 50%;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+        padding: 15px;
+        color: var(--color_6);
+        width: 300px;
+        color: #7d7d7d;
+    }
     
-}
-.record{
-    
-    background-color: var(--color_7);
-    width: 80%;
-    padding: 10px 10px;
-    border-radius: 5px;
-    text-align: center;  
-}
-.record:hover{
+    .record{
+        background-color: var(--color_7);
+        width: 80%;
+        padding: 10px 10px;
+        border-radius: 5px;
+        text-align: center;  
+    }
+    .record:hover{
         box-shadow: 0px 0px 15px #ffffff;
     }
 
@@ -199,7 +194,6 @@ fieldset{
             width: 90%;
             height: 80%;
         }
-        
     }
 </style>
 </html>

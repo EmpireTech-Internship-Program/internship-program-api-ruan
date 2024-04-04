@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RacconStack | Register account</title>
-    <link rel="stylesheet" href="../Styles/style_views_global.css">
+    <title>RacconStack | Register agencie</title>
+    <link rel="stylesheet" href="../Styles/style_views_edit_global.css">
     <link rel="stylesheet" href="../Styles/style_header_global.css">
 </head>
 <body>
@@ -24,45 +24,31 @@
                   </svg>
             </button>
             <a href="../home.html" class="back">🏠 Home</a>
-            
+           
         </div>
      </div>
      <div class="content" id="content" onclick="closed_sidebar()" tabindex="0">
-        
         <div class="box">
             <form action="">
                 <fieldset>
-                    <legend><strong>Register the holder</strong></legend>
+                    <legend><strong>Register a new agencie</strong></legend>
                     <div class="input_box">
-                        <input type="text" name="owner" id="owner" class="input_user" placeholder=" Owner of the account">
-                    </div>
-                    <br>
-                    <div class="radio">
-                    <p>Account type:</p>
-                    
-                        <input type="radio" name="type" value="savings account" id="savings" required>
-                        <label for="Savings account">Savings account</label>
-                        <br>
-                        <input type="radio" name="type" value="checking account" id="checking" required>
-                        <label for="Checking account">Checking account</label>
-                    </div>
-                     <br>
-                     <div class="input_box">
-                        <input type="number" name="account_number" id="account_number" class="input_user" placeholder=" Account number">
-                    </div>
-                    <div class="input_box_date">
-                        <label for="opening_date"><strong>Opening date:</strong></label>
-                        <input type="date" name="opening_date" id="opening_date" class="input_user" placeholder=" Opening date">
-                        
+                        <input type="text" name="name" id="name" class="input_user" placeholder=" Name">
                     </div>
                     <div class="input_box">
-                        <input type="number" name="opening_balance" id="opening_balance" class="input_user" placeholder=" Opening balance">
+                        <input type="number" name="number" id="number" class="input_user" placeholder=" Number">
                     </div>
-                    <input type="submit" value="Register" id="submit">  
+                    <div class="input_box">
+                        <input type="text" name="address" id="address" class="input_user" placeholder=" Address">                    
+                    </div>
+                    <div class="input_box">
+                        <input type="number" name="code" id="code" class="input_user" placeholder=" Code">                       
+                    </div>
+                    <input type="submit" value="Register" id="submit">
                 </fieldset>
             </form>
         </div>
-
+    </div>
     <script src="../Script/script.js"></script>
 </body>
 </html>

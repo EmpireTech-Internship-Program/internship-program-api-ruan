@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register test</title>
+    <link rel="stylesheet" href="regiter_style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <span>Register test agencie</span>
+            <button onclick="openModal()" id="new">Add</i></button>
+        </div>
+        <div class="divTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Number</th>
+                        <th>Address</th>
+                        <th>Code</th>
+                        <th class="acao">Edit</th>
+                        <th class="acao">Del</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal-container">
+            <div class="modal">
+                <form>
+                    <label for="m-name">Name</label>
+                    <input id="m-name" type="text" required>
+
+                    <label for="m-number">Number</label>
+                    <input id="m-number" type="number" required>
+
+                    <label for="m-address">Address</label>
+                    <input id="m-address" type="text" required>
+
+                    <label for="m-code">Code</label>
+                    <input id="m-code" type="number" required>
+
+                    <button id="bntSave">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="register_script.js"></script>
+</body>
+
+</html>
