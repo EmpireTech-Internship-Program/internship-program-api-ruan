@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-color: #d5ffff;
+}
+
+main{
+    padding: 20px;
+}
+
+#sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0fffe;
+    height: 100vh;
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+}
+
+#side_itens{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+#user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#user_avatar{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#user_infos span:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
+#sidebar {
+    padding: 12px;
+}
+
+.side_item{
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side_item.active {
+    background-color: #09706b;
+}
+
+.side_item:hover:not(.active),
+#logout_btn:hover {
+    background-color: #9be1e1;
+}
+
+.side_item a {
+    text-decoration:none ;
+    display: flex;
+    text-align: center;  
+    color: #0a0a0a;
+    gap: 14px;
+}
+
+.side_item.active a {
+   color: #fff;
+}
+
+.side_item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#logout {
+    border-top: 1px solid #d5ffff;
+    padding: 12px;
+}
+
+#logout_btn{
+    border: none;
+    padding: 12px;
+    font-size: 14px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 8px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#open_btn{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #09706b;
+    color: #d5ffff;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.item_description{
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
